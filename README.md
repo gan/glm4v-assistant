@@ -18,8 +18,8 @@ $ brew install miniconda
 Create a virtual environment, update pip, and install the required packages:
 
 ```
-$ git clone https://github.com/2noise/ChatTTS.git
-$ cd glm4v-chattts-assistant
+$ git clone https://github.com/gan/glm4v-assistant.git
+$ cd glm4v-assistant
 $ git clone https://github.com/2noise/ChatTTS.git
 ```
 
