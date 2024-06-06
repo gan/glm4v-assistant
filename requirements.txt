@@ -1,7 +1,6 @@
 opencv-python
 langchain
 langchain-openai
-langchain_google_genai
 langchain-community
 python-dotenv
 pyaudio
@@ -16,3 +15,7 @@ vector_quantize_pytorch
 transformers~=4.41.1
 vocos
 IPython
+Pillow
+cos-python-sdk-v5
+pydub
+socksio

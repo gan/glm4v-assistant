@@ -28,8 +28,8 @@ import logging
 
 # 设置日志级别为WARNING，INFO级别的日志将不会显示
 logging.basicConfig(level=logging.WARNING)
-logging.getLogger("httpx").setLevel(logging.WARNING)
-logging.getLogger("ChatTTS").setLevel(logging.WARNING)
+#logging.getLogger("httpx").setLevel(logging.WARNING)
+#logging.getLogger("ChatTTS").setLevel(logging.WARNING)
 #logging.getLogger("qcloud_cos").setLevel(logging.WARNING)
 
 torch._dynamo.config.cache_size_limit = 64
@@ -126,6 +126,8 @@ class Assistant:
         # 假设生成的音频数据为单个音频
         audio_data = np.array(wavs[0] * 32767, dtype=np.int16)
         # 获取当前时间，并格式化为文件名
+        if not os.path.exists("./output"):
+            os.makedirs("./output")
         file_name = f"./output/audio_{datetime.now().strftime('%Y%m%d_%H%M%S')}.wav"
 
         # 创建一个AudioSegment实例
