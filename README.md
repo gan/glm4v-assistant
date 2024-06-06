@@ -24,13 +24,14 @@ $ git clone https://github.com/2noise/ChatTTS.git
 ```
 
 
-```
-$ conda install -c conda-forge pynini=2.1.5 && pip install WeTextProcessing
-```
 
 ```
 $ conda create -n glm-asnt python=3.10
 $ conda activate glm-asnt
+```
+
+```
+$ conda install -c conda-forge pynini=2.1.5 && pip install WeTextProcessing
 $ pip install -U pip
 $ pip install -r requirements.txt
 ```
